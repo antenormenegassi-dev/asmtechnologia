@@ -26,7 +26,7 @@ export default function SobrePage() {
       <section className="border-b border-brand-black/10 py-16">
         <Container className="max-w-3xl space-y-6 text-base leading-relaxed text-brand-black/70">
           <p>
-            Tudo começa com uma necessidade simples — um certificado digital para emitir notas
+            Tudo começa com uma necessidade simples um certificado digital para emitir notas
             fiscais, por exemplo. Mas a jornada não termina ali. À medida que a empresa cresce,
             novas necessidades de gestão e tecnologia surgem, e a ASM está preparada para atender
             cada uma delas.

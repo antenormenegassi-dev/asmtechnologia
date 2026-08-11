@@ -1,14 +1,14 @@
-export const SITE_NAME = "ASM Tecnologia";
+export const SITE_NAME = "ASM Technologia";
 
 export const SITE_TAGLINE = "Tecnologia que protege, organiza e impulsiona empresas.";
 
 export const SITE_DESCRIPTION =
   "Certificados digitais, sistemas de gestão e soluções tecnológicas desenvolvidas para as necessidades do seu negócio.";
 
-export const SITE_URL = "https://www.asmtecnologia.com.br";
+export const SITE_URL = "https://www.asmtechnologia.com.br";
 
-// TODO: replace with the real ASM Tecnologia contact channels before launch.
-export const CONTACT_EMAIL = "contato@asmtecnologia.com.br";
+// TODO: replace with the real ASM Technologia contact channels before launch.
+export const CONTACT_EMAIL = "contato@asmtechnologia.com.br";
 export const CONTACT_PHONE_DISPLAY = "(00) 0000-0000";
 
 export interface NavItem {
@@ -19,8 +19,6 @@ export interface NavItem {
 export const NAV_ITEMS: NavItem[] = [
   { label: "Certificados Digitais", href: "/certificados-digitais" },
   { label: "Soluções Empresariais", href: "/solucoes-empresariais" },
-  { label: "Tecnologia Sob Medida", href: "/tecnologia-sob-medida" },
-  { label: "Seja Parceiro", href: "/parceiros" },
   { label: "Sobre", href: "/sobre" },
   { label: "Conteúdos", href: "/blog" },
 ];

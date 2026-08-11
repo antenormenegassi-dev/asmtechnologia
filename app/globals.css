@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 /*
- * ASM Technologia — brand tokens.
+ * ASM Technologia brand tokens.
  * Fixed 60/30/10 palette (white / blue / near-black). This is a brand site,
  * not a themeable app, so there is deliberately no prefers-color-scheme
- * dark-mode override here — the palette stays fixed regardless of OS theme.
+ * dark-mode override here the palette stays fixed regardless of OS theme.
  */
 :root {
   --color-brand-white: #ffffff;

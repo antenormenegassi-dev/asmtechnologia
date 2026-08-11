@@ -6,9 +6,9 @@ import { FeatureList } from "@/components/blocks/FeatureList";
 import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
 
 export const metadata: Metadata = {
-  title: "InfinityFy — Sistema de Gestão Empresarial",
+  title: "InfinityFy Sistema de Gestão Empresarial",
   description:
-    "Conheça o InfinityFy, o sistema de gestão empresarial da ASM Technologia: vendas, PDV, estoque, financeiro, compras, DRE, WMS e catálogo digital.",
+    "Conheça o InfinityFy, sistema de gestão empresarial parceiro da ASM Technologia: vendas, PDV, estoque, financeiro, compras, DRE, WMS e catálogo digital.",
 };
 
 const MODULES = [
@@ -30,13 +30,14 @@ export default function InfinityFyPage() {
     <>
       <section className="border-b border-brand-black/10 py-20">
         <Container>
-          <Badge>Uma solução ASM Technologia</Badge>
+          <Badge>Parceria ASM Technologia</Badge>
           <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-brand-black">
             InfinityFy: gestão completa para sua empresa
           </h1>
           <p className="mt-4 max-w-xl text-lg leading-relaxed text-brand-black/70">
             Vendas, PDV, estoque, financeiro, compras, relatórios e muito mais em uma única
-            plataforma — desenvolvida e mantida pela ASM Technologia.
+            plataforma, oferecida por meio da parceria comercial entre a ASM Technologia e o
+            InfinityFy.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <WhatsAppCTA message="Olá! Gostaria de conhecer o InfinityFy para minha empresa.">

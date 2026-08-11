@@ -19,7 +19,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Como podemos ajudar"
             title="Três frentes, uma única empresa de tecnologia"
-            description="Encontre o ponto de partida certo para o momento da sua empresa — e descubra o restante conforme sua necessidade cresce."
+            description="Encontre o ponto de partida certo para o momento da sua empresa e descubra o restante conforme sua necessidade cresce."
           />
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             <PillarCard

@@ -18,7 +18,7 @@ export default function ContatoPage() {
           <SectionHeading
             eyebrow="Contato"
             title="Fale com a ASM Technologia"
-            description="O caminho mais rápido para falar com a nossa equipe é o WhatsApp — respondemos com atendimento especializado sobre certificados, sistemas e projetos sob medida."
+            description="O caminho mais rápido para falar com a nossa equipe é o WhatsApp respondemos com atendimento especializado sobre certificados, sistemas e projetos sob medida."
           />
 
           <div className="mt-8">
@@ -40,7 +40,7 @@ export default function ContatoPage() {
         </div>
 
         {/*
-          Static form UI only — not wired to a backend. Given the site's
+          Static form UI only not wired to a backend. Given the site's
           WhatsApp-first conversion strategy, this is a secondary path;
           hook up a real submit handler / endpoint before launch if this
           form should actually send messages.
@@ -90,7 +90,7 @@ export default function ContatoPage() {
               Enviar mensagem
             </button>
             <p className="text-xs text-brand-black/50">
-              Prefere resposta imediata? Use o WhatsApp ao lado — é o canal mais rápido com a
+              Prefere resposta imediata? Use o WhatsApp ao lado é o canal mais rápido com a
               nossa equipe.
             </p>
           </div>

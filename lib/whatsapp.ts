@@ -1,4 +1,4 @@
-// TODO: replace with the real ASM Tecnologia WhatsApp number in E.164 format
+// TODO: replace with the real ASM Technologia WhatsApp number in E.164 format
 // (digits only, country + area code, no "+" or symbols) before launch.
 export const WHATSAPP_NUMBER = "5500000000000";
 

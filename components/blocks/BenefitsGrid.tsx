@@ -16,12 +16,12 @@ const BENEFITS = [
   {
     title: "Tecnologia integrada",
     description:
-      "Certificados, sistemas de gestão e projetos sob medida conversam entre si — uma única empresa acompanha sua maturidade digital.",
+      "Certificados, sistemas de gestão e projetos sob medida conversam entre si uma única empresa acompanha sua maturidade digital.",
   },
   {
     title: "Suporte contínuo",
     description:
-      "Renovação, atualização e suporte técnico acompanham o cliente após a compra — não apenas durante a venda.",
+      "Renovação, atualização e suporte técnico acompanham o cliente após a compra não apenas durante a venda.",
   },
 ];
 

@@ -1,8 +1,8 @@
 import { SITE_NAME } from "@/lib/constants";
 
 /**
- * The ASM modular mark: three geometric modules — two angled strokes and a
- * diamond "node" — that read together as an abstract letter A. Deliberately
+ * The ASM modular mark: three geometric modules two angled strokes and a
+ * diamond "node" that read together as an abstract letter A. Deliberately
  * avoids literal tech-company iconography (locks, shields, certificates).
  * The gap between the two strokes at the apex is intentional negative space.
  *

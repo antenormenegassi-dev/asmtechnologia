@@ -6,7 +6,7 @@ export interface AccordionItem {
 }
 
 /**
- * Hand-rolled FAQ accordion using native <details>/<summary> — no JS
+ * Hand-rolled FAQ accordion using native <details>/<summary> no JS
  * required, works without a "use client" boundary.
  */
 export function Accordion({ items }: { items: AccordionItem[] }) {

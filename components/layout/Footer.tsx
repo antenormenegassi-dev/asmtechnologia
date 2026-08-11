@@ -38,7 +38,7 @@ export function Footer() {
       <Container className="relative py-16">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <Link href="/" aria-label="ASM Technologia — página inicial">
+            <Link href="/" aria-label="ASM Technologia página inicial">
               <Logo tone="inverted" />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-brand-white/60">

@@ -67,9 +67,9 @@ export const certificates: Certificate[] = [
     ],
     whatsappMessage: "Olá! Gostaria de saber mais sobre o certificado e-CNPJ.",
     relatedSlugs: ["e-cnpj-a1", "e-cnpj-a3", "nf-e"],
-    seoTitle: "e-CNPJ — Certificado Digital para Empresas",
+    seoTitle: "e-CNPJ Certificado Digital para Empresas",
     seoDescription:
-      "Emita seu e-CNPJ com a ASM Tecnologia. Certificado digital para empresas, disponível em A1 e A3, com atendimento especializado.",
+      "Emita seu e-CNPJ com a ASM Technologia. Certificado digital para empresas, disponível em A1 e A3, com atendimento especializado.",
   },
   {
     slug: "e-cnpj-a1",
@@ -109,7 +109,7 @@ export const certificates: Certificate[] = [
     ],
     whatsappMessage: "Olá! Gostaria de comprar o certificado e-CNPJ A1.",
     relatedSlugs: ["e-cnpj", "e-cnpj-a3", "nf-e"],
-    seoTitle: "e-CNPJ A1 — Certificado Digital em Arquivo",
+    seoTitle: "e-CNPJ A1 Certificado Digital em Arquivo",
     seoDescription:
       "Compre o e-CNPJ A1: certificado digital em arquivo, validade de 12 meses, ideal para emissão de notas fiscais e integração com sistemas.",
   },
@@ -151,7 +151,7 @@ export const certificates: Certificate[] = [
     ],
     whatsappMessage: "Olá! Gostaria de comprar o certificado e-CNPJ A3.",
     relatedSlugs: ["e-cnpj", "e-cnpj-a1", "nf-e"],
-    seoTitle: "e-CNPJ A3 — Certificado Digital em Cartão ou Token",
+    seoTitle: "e-CNPJ A3 Certificado Digital em Cartão ou Token",
     seoDescription:
       "Compre o e-CNPJ A3: certificado digital em cartão ou token, validade de até 3 anos, com segurança física para sua empresa.",
   },
@@ -194,9 +194,9 @@ export const certificates: Certificate[] = [
     ],
     whatsappMessage: "Olá! Gostaria de saber mais sobre o certificado e-CPF.",
     relatedSlugs: ["e-cpf-a1", "e-cpf-a3", "e-cnpj"],
-    seoTitle: "e-CPF — Certificado Digital para Pessoa Física",
+    seoTitle: "e-CPF Certificado Digital para Pessoa Física",
     seoDescription:
-      "Emita seu e-CPF com a ASM Tecnologia. Certificado digital para pessoa física, disponível em A1 e A3, com atendimento especializado.",
+      "Emita seu e-CPF com a ASM Technologia. Certificado digital para pessoa física, disponível em A1 e A3, com atendimento especializado.",
   },
   {
     slug: "e-cpf-a1",
@@ -231,7 +231,7 @@ export const certificates: Certificate[] = [
     ],
     whatsappMessage: "Olá! Gostaria de comprar o certificado e-CPF A1.",
     relatedSlugs: ["e-cpf", "e-cpf-a3", "e-cnpj-a1"],
-    seoTitle: "e-CPF A1 — Certificado Digital Pessoal em Arquivo",
+    seoTitle: "e-CPF A1 Certificado Digital Pessoal em Arquivo",
     seoDescription:
       "Compre o e-CPF A1: certificado digital pessoal em arquivo, validade de 12 meses, prático para assinaturas frequentes.",
   },
@@ -268,7 +268,7 @@ export const certificates: Certificate[] = [
     ],
     whatsappMessage: "Olá! Gostaria de comprar o certificado e-CPF A3.",
     relatedSlugs: ["e-cpf", "e-cpf-a1", "e-cnpj-a3"],
-    seoTitle: "e-CPF A3 — Certificado Digital Pessoal em Cartão ou Token",
+    seoTitle: "e-CPF A3 Certificado Digital Pessoal em Cartão ou Token",
     seoDescription:
       "Compre o e-CPF A3: certificado digital pessoal em cartão ou token, validade de até 3 anos, com segurança física.",
   },
@@ -300,7 +300,7 @@ export const certificates: Certificate[] = [
       {
         question: "Preciso de um e-CNPJ específico para NF-e?",
         answer:
-          "Não existe um certificado exclusivo para NF-e — o próprio e-CNPJ (A1 ou A3) é utilizado para a emissão. A escolha do modelo depende do seu volume e forma de operação.",
+          "Não existe um certificado exclusivo para NF-e o próprio e-CNPJ (A1 ou A3) é utilizado para a emissão. A escolha do modelo depende do seu volume e forma de operação.",
       },
       {
         question: "A ASM ajuda a configurar o certificado no meu sistema?",
@@ -384,14 +384,14 @@ export const certificates: Certificate[] = [
       {
         question: "Não encontrei o certificado que preciso. E agora?",
         answer:
-          "Fale com a nossa equipe pelo WhatsApp — atendemos necessidades específicas que não estão listadas no catálogo padrão.",
+          "Fale com a nossa equipe pelo WhatsApp atendemos necessidades específicas que não estão listadas no catálogo padrão.",
       },
     ],
     whatsappMessage: "Olá! Preciso de orientação sobre um certificado digital específico.",
     relatedSlugs: ["e-cnpj", "e-cpf"],
-    seoTitle: "Outros Certificados Digitais — ASM Tecnologia",
+    seoTitle: "Outros Certificados Digitais ASM Technologia",
     seoDescription:
-      "Certificados digitais para necessidades específicas: MEI, carimbo do tempo, SSL e mais. Fale com a ASM Tecnologia.",
+      "Certificados digitais para necessidades específicas: MEI, carimbo do tempo, SSL e mais. Fale com a ASM Technologia.",
   },
 ];
 

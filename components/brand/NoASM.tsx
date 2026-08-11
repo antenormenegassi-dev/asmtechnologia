@@ -1,5 +1,5 @@
 /**
- * "Nó ASM" — the decorative graphic derived from the brand mark's diamond
+ * "Nó ASM" the decorative graphic derived from the brand mark's diamond
  * "node" module. Used as a subtle section-divider / background accent
  * (behind headings, in footer corners, between content blocks) rather than
  * generic icons or dividers.
