@@ -4,9 +4,9 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { NoASM } from "@/components/brand/NoASM";
 
 export const metadata: Metadata = {
-  title: "Sobre a ASM Tecnologia",
+  title: "Sobre a ASM Technologia",
   description:
-    "Conheça a ASM Tecnologia: uma empresa de tecnologia que protege, organiza e impulsiona empresas por meio de certificados digitais, sistemas de gestão e tecnologia sob medida.",
+    "Conheça a ASM Technologia: uma empresa de tecnologia que protege, organiza e impulsiona empresas por meio de certificados digitais, sistemas de gestão e tecnologia sob medida.",
 };
 
 export default function SobrePage() {
@@ -18,7 +18,7 @@ export default function SobrePage() {
           <SectionHeading
             eyebrow="Sobre a ASM"
             title="Tecnologia que protege, organiza e impulsiona empresas"
-            description="A ASM Tecnologia nasceu para ser mais do que uma vendedora de certificados digitais: somos uma empresa de tecnologia capaz de acompanhar o cliente em diferentes níveis de maturidade digital."
+            description="A ASM Technologia nasceu para ser mais do que uma vendedora de certificados digitais: somos uma empresa de tecnologia capaz de acompanhar o cliente em diferentes níveis de maturidade digital."
           />
         </Container>
       </section>

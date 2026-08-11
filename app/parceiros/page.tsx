@@ -7,7 +7,7 @@ import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
 export const metadata: Metadata = {
   title: "Seja Parceiro",
   description:
-    "Programa de Parceiros da ASM Tecnologia: indique certificados digitais e soluções empresariais e receba condições especiais.",
+    "Programa de Parceiros da ASM Technologia: indique certificados digitais e soluções empresariais e receba condições especiais.",
 };
 
 const BENEFITS = [

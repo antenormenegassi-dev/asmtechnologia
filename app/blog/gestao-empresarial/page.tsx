@@ -4,7 +4,7 @@ import { BlogListing } from "@/components/blocks/BlogListing";
 export const metadata: Metadata = {
   title: "Conteúdos sobre Gestão Empresarial",
   description:
-    "Artigos sobre ERP, controle de estoque, financeiro, DRE e gestão empresarial produzidos pela ASM Tecnologia.",
+    "Artigos sobre ERP, controle de estoque, financeiro, DRE e gestão empresarial produzidos pela ASM Technologia.",
 };
 
 export default function BlogGestaoEmpresarialPage() {

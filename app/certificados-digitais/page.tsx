@@ -8,7 +8,7 @@ import { certificates } from "@/data/certificates";
 export const metadata: Metadata = {
   title: "Certificados Digitais",
   description:
-    "e-CNPJ, e-CPF, NF-e e NFC-e em A1 e A3. Encontre o certificado digital ideal para sua empresa com a ASM Tecnologia.",
+    "e-CNPJ, e-CPF, NF-e e NFC-e em A1 e A3. Encontre o certificado digital ideal para sua empresa com a ASM Technologia.",
 };
 
 const GROUPS = [

@@ -15,7 +15,7 @@ export function CTASection() {
         </p>
         <div className="mt-4 flex flex-wrap justify-center gap-4">
           <WhatsAppCTA
-            message="Olá! Gostaria de falar com um especialista da ASM Tecnologia."
+            message="Olá! Gostaria de falar com um especialista da ASM Technologia."
             className="bg-brand-white text-brand-blue hover:bg-brand-white/90"
           >
             Falar no WhatsApp

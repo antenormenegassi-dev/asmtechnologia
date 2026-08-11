@@ -7,7 +7,7 @@ import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contato",
   description:
-    "Fale com a ASM Tecnologia pelo WhatsApp, e-mail ou telefone. Atendimento especializado para certificados digitais e soluções empresariais.",
+    "Fale com a ASM Technologia pelo WhatsApp, e-mail ou telefone. Atendimento especializado para certificados digitais e soluções empresariais.",
 };
 
 export default function ContatoPage() {
@@ -17,12 +17,12 @@ export default function ContatoPage() {
         <div>
           <SectionHeading
             eyebrow="Contato"
-            title="Fale com a ASM Tecnologia"
+            title="Fale com a ASM Technologia"
             description="O caminho mais rápido para falar com a nossa equipe é o WhatsApp — respondemos com atendimento especializado sobre certificados, sistemas e projetos sob medida."
           />
 
           <div className="mt-8">
-            <WhatsAppCTA message="Olá! Gostaria de falar com a equipe da ASM Tecnologia.">
+            <WhatsAppCTA message="Olá! Gostaria de falar com a equipe da ASM Technologia.">
               Chamar no WhatsApp
             </WhatsAppCTA>
           </div>

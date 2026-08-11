@@ -4,7 +4,7 @@ import { BlogListing } from "@/components/blocks/BlogListing";
 export const metadata: Metadata = {
   title: "Conteúdos sobre Certificados Digitais",
   description:
-    "Artigos sobre e-CNPJ, e-CPF, NF-e, NFC-e e certificação digital produzidos pela ASM Tecnologia.",
+    "Artigos sobre e-CNPJ, e-CPF, NF-e, NFC-e e certificação digital produzidos pela ASM Technologia.",
 };
 
 export default function BlogCertificadosDigitaisPage() {

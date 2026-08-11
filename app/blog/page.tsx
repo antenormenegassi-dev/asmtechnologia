@@ -8,7 +8,7 @@ import { blogPosts } from "@/data/blogPosts";
 export const metadata: Metadata = {
   title: "Conteúdos",
   description:
-    "Conteúdos sobre certificados digitais, gestão empresarial e tecnologia produzidos pela ASM Tecnologia.",
+    "Conteúdos sobre certificados digitais, gestão empresarial e tecnologia produzidos pela ASM Technologia.",
 };
 
 export default function BlogPage() {

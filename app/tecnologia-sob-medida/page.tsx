@@ -7,7 +7,7 @@ import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
 export const metadata: Metadata = {
   title: "Tecnologia Sob Medida",
   description:
-    "Sistemas personalizados, plataformas web, aplicativos, APIs e automações desenvolvidos sob medida pela ASM Tecnologia.",
+    "Sistemas personalizados, plataformas web, aplicativos, APIs e automações desenvolvidos sob medida pela ASM Technologia.",
 };
 
 const SERVICES = [

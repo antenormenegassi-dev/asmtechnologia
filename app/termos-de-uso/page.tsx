@@ -3,7 +3,7 @@ import { Container } from "@/components/layout/Container";
 
 export const metadata: Metadata = {
   title: "Termos de Uso",
-  description: "Termos de Uso da ASM Tecnologia.",
+  description: "Termos de Uso da ASM Technologia.",
 };
 
 export default function TermosDeUsoPage() {
@@ -27,7 +27,7 @@ export default function TermosDeUsoPage() {
           <div>
             <h2 className="text-lg font-semibold text-brand-black">1. Aceitação dos termos</h2>
             <p className="mt-2">
-              Ao utilizar o site da ASM Tecnologia, você concorda com estes Termos de Uso e com a
+              Ao utilizar o site da ASM Technologia, você concorda com estes Termos de Uso e com a
               nossa Política de Privacidade.
             </p>
           </div>
@@ -61,7 +61,7 @@ export default function TermosDeUsoPage() {
           <div>
             <h2 className="text-lg font-semibold text-brand-black">5. Alterações destes termos</h2>
             <p className="mt-2">
-              A ASM Tecnologia pode atualizar estes Termos de Uso periodicamente. A versão vigente
+              A ASM Technologia pode atualizar estes Termos de Uso periodicamente. A versão vigente
               estará sempre disponível nesta página.
             </p>
           </div>

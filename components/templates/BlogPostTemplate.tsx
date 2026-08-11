@@ -51,7 +51,7 @@ export function BlogPostTemplate({ post }: { post: BlogPost }) {
             Quer ajuda especializada com esse assunto?
           </p>
           <p className="mt-2 text-sm text-brand-black/70">
-            Fale com a equipe da ASM Tecnologia e receba orientação personalizada.
+            Fale com a equipe da ASM Technologia e receba orientação personalizada.
           </p>
           <div className="mt-6 flex justify-center">
             <WhatsAppCTA message={`Olá! Li o conteúdo "${post.title}" e gostaria de saber mais.`}>

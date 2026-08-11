@@ -4,7 +4,7 @@ import { BlogListing } from "@/components/blocks/BlogListing";
 export const metadata: Metadata = {
   title: "Conteúdos sobre Tecnologia",
   description:
-    "Artigos sobre sistemas sob medida, automação, integrações e transformação digital produzidos pela ASM Tecnologia.",
+    "Artigos sobre sistemas sob medida, automação, integrações e transformação digital produzidos pela ASM Technologia.",
 };
 
 export default function BlogTecnologiaPage() {

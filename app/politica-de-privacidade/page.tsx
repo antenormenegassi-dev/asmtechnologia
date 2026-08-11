@@ -3,7 +3,7 @@ import { Container } from "@/components/layout/Container";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade",
-  description: "Política de Privacidade da ASM Tecnologia.",
+  description: "Política de Privacidade da ASM Technologia.",
 };
 
 export default function PoliticaDePrivacidadePage() {
@@ -27,7 +27,7 @@ export default function PoliticaDePrivacidadePage() {
           <div>
             <h2 className="text-lg font-semibold text-brand-black">1. Dados que coletamos</h2>
             <p className="mt-2">
-              A ASM Tecnologia pode coletar dados como nome, e-mail, telefone e CNPJ/CPF quando
+              A ASM Technologia pode coletar dados como nome, e-mail, telefone e CNPJ/CPF quando
               você entra em contato, solicita um certificado digital ou preenche formulários no
               site.
             </p>

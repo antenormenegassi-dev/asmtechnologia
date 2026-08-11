@@ -8,7 +8,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-brand-black/10 bg-brand-white/95 backdrop-blur">
       <Container className="flex h-20 items-center justify-between">
-        <Link href="/" aria-label="ASM Tecnologia — página inicial">
+        <Link href="/" aria-label="ASM Technologia — página inicial">
           <Logo />
         </Link>
 

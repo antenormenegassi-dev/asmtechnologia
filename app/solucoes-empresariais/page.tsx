@@ -8,7 +8,7 @@ import { CTASection } from "@/components/blocks/CTASection";
 export const metadata: Metadata = {
   title: "Soluções Empresariais",
   description:
-    "Sistemas de gestão empresarial da ASM Tecnologia, com o InfinityFy: vendas, PDV, estoque, financeiro e mais em um só lugar.",
+    "Sistemas de gestão empresarial da ASM Technologia, com o InfinityFy: vendas, PDV, estoque, financeiro e mais em um só lugar.",
 };
 
 const AREAS = [

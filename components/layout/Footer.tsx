@@ -38,7 +38,7 @@ export function Footer() {
       <Container className="relative py-16">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <Link href="/" aria-label="ASM Tecnologia — página inicial">
+            <Link href="/" aria-label="ASM Technologia — página inicial">
               <Logo tone="inverted" />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-brand-white/60">
@@ -56,7 +56,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-4 border-t border-brand-white/10 pt-8 text-xs text-brand-white/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>&copy; {new Date().getFullYear()} ASM Tecnologia. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} ASM Technologia. Todos os direitos reservados.</p>
           <p>CNPJ: 00.000.000/0001-00</p>
         </div>
       </Container>
