@@ -3,6 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Hero } from "@/components/blocks/Hero";
 import { TrustBadges } from "@/components/blocks/TrustBadges";
 import { PillarCard } from "@/components/blocks/PillarCard";
+import { ShieldCheckIcon, LayersIcon, BoltIcon } from "@/components/ui/icons";
 import { BenefitsGrid } from "@/components/blocks/BenefitsGrid";
 import { PartnerTeaser } from "@/components/blocks/PartnerTeaser";
 import { ContentTeaser } from "@/components/blocks/ContentTeaser";
@@ -14,7 +15,7 @@ export default function Home() {
       <Hero />
       <TrustBadges />
 
-      <section className="border-b border-brand-black/10 py-24">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-24">
         <Container>
           <SectionHeading
             eyebrow="Como podemos ajudar"
@@ -23,6 +24,7 @@ export default function Home() {
           />
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
             <PillarCard
+              icon={ShieldCheckIcon}
               eyebrow="Protege"
               title="Certificados Digitais"
               description="e-CNPJ, e-CPF, NF-e e NF-C com atendimento especializado, do modelo A1 ao A3, para pessoas físicas e empresas."
@@ -30,6 +32,7 @@ export default function Home() {
               linkLabel="Ver certificados"
             />
             <PillarCard
+              icon={LayersIcon}
               eyebrow="Organiza"
               title="Soluções Empresariais"
               description="Conheça o InfinityFy: gestão de vendas, PDV, estoque, financeiro, compras, DRE e catálogo digital em um só sistema."
@@ -37,6 +40,7 @@ export default function Home() {
               linkLabel="Ver soluções"
             />
             <PillarCard
+              icon={BoltIcon}
               eyebrow="Transforma"
               title="Tecnologia Sob Medida"
               description="Sistemas personalizados, plataformas web, aplicativos, APIs e automações desenvolvidos para o seu problema específico."

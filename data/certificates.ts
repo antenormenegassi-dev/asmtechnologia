@@ -5,6 +5,11 @@ export interface CertificateFAQ {
   answer: string;
 }
 
+export interface AcquisitionStep {
+  title: string;
+  description: string;
+}
+
 export interface Certificate {
   slug: string;
   category: CertificateCategory;
@@ -14,7 +19,7 @@ export interface Certificate {
   validity: string;
   mediaType: string;
   useCases: string[];
-  acquisitionSteps: string[];
+  acquisitionSteps: AcquisitionStep[];
   faq: CertificateFAQ[];
   whatsappMessage: string;
   relatedSlugs: string[];
@@ -43,10 +48,26 @@ export const certificates: Certificate[] = [
       "Participação em licitações eletrônicas",
     ],
     acquisitionSteps: [
-      "Fale com a ASM e informe o modelo (A1 ou A3) desejado",
-      "Envie os documentos da empresa para validação",
-      "Realize a videoconferência de validação de identidade",
-      "Receba orientação para instalação e primeiro uso",
+      {
+        title: "Fale com a ASM",
+        description:
+          "Converse com a nossa equipe e informe se sua empresa precisa do modelo A1 ou A3 — nós ajudamos a decidir com base no seu volume de uso.",
+      },
+      {
+        title: "Envie os documentos",
+        description:
+          "Envie os documentos da empresa (contrato social, CNPJ e documento do representante legal) para iniciar a validação.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a videoconferência de validação de identidade, exigida pela ICP-Brasil para emitir o certificado com segurança.",
+      },
+      {
+        title: "Comece a usar",
+        description:
+          "Receba orientação passo a passo para instalar o certificado e realizar sua primeira emissão ou assinatura com tranquilidade.",
+      },
     ],
     faq: [
       {
@@ -90,10 +111,24 @@ export const certificates: Certificate[] = [
       "Acesso a sistemas do governo sem necessidade de dispositivo físico",
     ],
     acquisitionSteps: [
-      "Solicite o e-CNPJ A1 pelo WhatsApp",
-      "Envie os documentos da empresa",
-      "Realize a validação de identidade por videoconferência",
-      "Receba o arquivo digital e o passo a passo de instalação",
+      {
+        title: "Solicite pelo WhatsApp",
+        description: "Peça o e-CNPJ A1 pelo WhatsApp e conte com atendimento especializado do início ao fim do processo.",
+      },
+      {
+        title: "Envie os documentos",
+        description: "Envie os documentos da empresa para que a ASM prepare a emissão do seu certificado.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a validação de identidade por videoconferência, etapa exigida pela ICP-Brasil para garantir a segurança do certificado.",
+      },
+      {
+        title: "Instale o certificado",
+        description:
+          "Receba o arquivo digital e o passo a passo de instalação no computador ou servidor da sua empresa.",
+      },
     ],
     faq: [
       {
@@ -132,10 +167,24 @@ export const certificates: Certificate[] = [
       "Acesso a sistemas do governo em múltiplos dispositivos, com o cartão/token em mãos",
     ],
     acquisitionSteps: [
-      "Solicite o e-CNPJ A3 pelo WhatsApp",
-      "Envie os documentos da empresa",
-      "Realize a validação de identidade por videoconferência",
-      "Retire ou receba o cartão/token e a leitora, se necessário",
+      {
+        title: "Solicite pelo WhatsApp",
+        description: "Peça o e-CNPJ A3 pelo WhatsApp e conte com atendimento especializado do início ao fim do processo.",
+      },
+      {
+        title: "Envie os documentos",
+        description: "Envie os documentos da empresa para que a ASM prepare a emissão do seu certificado.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a validação de identidade por videoconferência, etapa exigida pela ICP-Brasil para garantir a segurança do certificado.",
+      },
+      {
+        title: "Receba seu dispositivo",
+        description:
+          "Retire ou receba o cartão ou token e a leitora, se necessário, prontos para uso imediato.",
+      },
     ],
     faq: [
       {
@@ -175,10 +224,25 @@ export const certificates: Certificate[] = [
       "Assinatura de documentos como representante legal de empresa",
     ],
     acquisitionSteps: [
-      "Fale com a ASM e informe o modelo (A1 ou A3) desejado",
-      "Envie seus documentos pessoais para validação",
-      "Realize a videoconferência de validação de identidade",
-      "Receba orientação para instalação e primeiro uso",
+      {
+        title: "Fale com a ASM",
+        description:
+          "Converse com a nossa equipe e informe se você precisa do modelo A1 ou A3 — nós ajudamos a decidir com base na sua frequência de uso.",
+      },
+      {
+        title: "Envie seus documentos",
+        description: "Envie seus documentos pessoais (RG, CPF e comprovante de residência) para iniciar a validação.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a videoconferência de validação de identidade, exigida pela ICP-Brasil para emitir o certificado com segurança.",
+      },
+      {
+        title: "Comece a usar",
+        description:
+          "Receba orientação passo a passo para instalar o certificado e realizar sua primeira assinatura com tranquilidade.",
+      },
     ],
     faq: [
       {
@@ -217,10 +281,23 @@ export const certificates: Certificate[] = [
       "Acesso a portais do governo sem dispositivo físico",
     ],
     acquisitionSteps: [
-      "Solicite o e-CPF A1 pelo WhatsApp",
-      "Envie seus documentos pessoais",
-      "Realize a validação de identidade por videoconferência",
-      "Receba o arquivo digital e o passo a passo de instalação",
+      {
+        title: "Solicite pelo WhatsApp",
+        description: "Peça o e-CPF A1 pelo WhatsApp e conte com atendimento especializado do início ao fim do processo.",
+      },
+      {
+        title: "Envie seus documentos",
+        description: "Envie seus documentos pessoais para que a ASM prepare a emissão do seu certificado.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a validação de identidade por videoconferência, etapa exigida pela ICP-Brasil para garantir a segurança do certificado.",
+      },
+      {
+        title: "Instale o certificado",
+        description: "Receba o arquivo digital e o passo a passo de instalação no seu computador.",
+      },
     ],
     faq: [
       {
@@ -254,10 +331,23 @@ export const certificates: Certificate[] = [
       "Acesso a portais do governo com maior segurança física",
     ],
     acquisitionSteps: [
-      "Solicite o e-CPF A3 pelo WhatsApp",
-      "Envie seus documentos pessoais",
-      "Realize a validação de identidade por videoconferência",
-      "Retire ou receba o cartão/token",
+      {
+        title: "Solicite pelo WhatsApp",
+        description: "Peça o e-CPF A3 pelo WhatsApp e conte com atendimento especializado do início ao fim do processo.",
+      },
+      {
+        title: "Envie seus documentos",
+        description: "Envie seus documentos pessoais para que a ASM prepare a emissão do seu certificado.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a validação de identidade por videoconferência, etapa exigida pela ICP-Brasil para garantir a segurança do certificado.",
+      },
+      {
+        title: "Receba seu dispositivo",
+        description: "Retire ou receba o cartão ou token, pronto para uso imediato.",
+      },
     ],
     faq: [
       {
@@ -291,10 +381,26 @@ export const certificates: Certificate[] = [
       "Operações de venda para outras empresas (B2B)",
     ],
     acquisitionSteps: [
-      "Converse com a ASM sobre seu volume de emissões",
-      "Escolha entre e-CNPJ A1 ou A3 com orientação especializada",
-      "Realize a validação de identidade",
-      "Configure o certificado no seu sistema emissor de notas",
+      {
+        title: "Conte seu volume",
+        description:
+          "Converse com a ASM sobre seu volume de emissões para identificar o certificado mais adequado ao seu negócio.",
+      },
+      {
+        title: "Escolha o modelo",
+        description:
+          "Escolha entre e-CNPJ A1 ou A3 com orientação especializada, considerando praticidade e frequência de uso.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a validação de identidade exigida pela ICP-Brasil para garantir a segurança do certificado.",
+      },
+      {
+        title: "Configure e emita",
+        description:
+          "Configure o certificado no seu sistema emissor de notas e comece a emitir NF-e com o suporte da nossa equipe.",
+      },
     ],
     faq: [
       {
@@ -333,10 +439,26 @@ export const certificates: Certificate[] = [
       "Substituição do cupom fiscal em vendas ao consumidor final",
     ],
     acquisitionSteps: [
-      "Converse com a ASM sobre seu volume de vendas",
-      "Escolha entre e-CNPJ A1 ou A3 com orientação especializada",
-      "Realize a validação de identidade",
-      "Configure o certificado no seu sistema de PDV",
+      {
+        title: "Conte seu volume",
+        description:
+          "Converse com a ASM sobre seu volume de vendas para identificar o certificado mais adequado ao seu PDV.",
+      },
+      {
+        title: "Escolha o modelo",
+        description:
+          "Escolha entre e-CNPJ A1 ou A3 com orientação especializada, considerando praticidade e frequência de uso.",
+      },
+      {
+        title: "Valide sua identidade",
+        description:
+          "Realize a validação de identidade exigida pela ICP-Brasil para garantir a segurança do certificado.",
+      },
+      {
+        title: "Configure e venda",
+        description:
+          "Configure o certificado no seu sistema de PDV e comece a emitir NFC-e com o suporte da nossa equipe.",
+      },
     ],
     faq: [
       {
@@ -375,10 +497,22 @@ export const certificates: Certificate[] = [
       "Certificados SSL para segurança de sites e sistemas",
     ],
     acquisitionSteps: [
-      "Fale com a ASM e descreva sua necessidade",
-      "Receba orientação sobre o certificado mais adequado",
-      "Envie a documentação necessária",
-      "Conclua a emissão com o suporte da nossa equipe",
+      {
+        title: "Descreva sua necessidade",
+        description: "Fale com a ASM e descreva sua necessidade específica, mesmo que ela não esteja no catálogo padrão.",
+      },
+      {
+        title: "Receba orientação",
+        description: "Receba orientação sobre o certificado mais adequado ao seu caso, com atendimento especializado.",
+      },
+      {
+        title: "Envie a documentação",
+        description: "Envie a documentação necessária para iniciar o processo de emissão.",
+      },
+      {
+        title: "Conclua a emissão",
+        description: "Conclua a emissão com o suporte da nossa equipe do início ao fim.",
+      },
     ],
     faq: [
       {

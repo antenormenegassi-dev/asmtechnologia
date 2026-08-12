@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function SobrePage() {
   return (
     <>
-      <section className="relative overflow-hidden border-b border-brand-black/10 py-20">
+      <section className="relative overflow-hidden border-b border-brand-black/10 dark:border-brand-white/10 py-20">
         <NoASM className="pointer-events-none absolute -right-24 top-0 h-96 w-96 text-brand-blue/5" />
         <Container className="relative max-w-2xl">
           <SectionHeading
@@ -23,8 +23,8 @@ export default function SobrePage() {
         </Container>
       </section>
 
-      <section className="border-b border-brand-black/10 py-16">
-        <Container className="max-w-3xl space-y-6 text-base leading-relaxed text-brand-black/70">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
+        <Container className="max-w-3xl space-y-6 text-base leading-relaxed text-brand-black/70 dark:text-brand-white/70">
           <p>
             Tudo começa com uma necessidade simples um certificado digital para emitir notas
             fiscais, por exemplo. Mas a jornada não termina ali. À medida que a empresa cresce,
@@ -51,21 +51,21 @@ export default function SobrePage() {
         <Container>
           <SectionHeading eyebrow="Nossos pilares" title="Protege, organiza e transforma" />
           <div className="mt-10 grid gap-6 sm:grid-cols-3">
-            <div className="rounded-card border border-brand-black/10 p-6">
+            <div className="rounded-card border border-brand-black/10 dark:border-brand-white/10 p-6">
               <p className="text-sm font-semibold uppercase tracking-wide text-brand-blue">Protege</p>
-              <p className="mt-3 text-sm leading-relaxed text-brand-black/70">
+              <p className="mt-3 text-sm leading-relaxed text-brand-black/70 dark:text-brand-white/70">
                 Certificados digitais com segurança, clareza e atendimento especializado.
               </p>
             </div>
-            <div className="rounded-card border border-brand-black/10 p-6">
+            <div className="rounded-card border border-brand-black/10 dark:border-brand-white/10 p-6">
               <p className="text-sm font-semibold uppercase tracking-wide text-brand-blue">Organiza</p>
-              <p className="mt-3 text-sm leading-relaxed text-brand-black/70">
+              <p className="mt-3 text-sm leading-relaxed text-brand-black/70 dark:text-brand-white/70">
                 Soluções empresariais como o InfinityFy, que centralizam a gestão do negócio.
               </p>
             </div>
-            <div className="rounded-card border border-brand-black/10 p-6">
+            <div className="rounded-card border border-brand-black/10 dark:border-brand-white/10 p-6">
               <p className="text-sm font-semibold uppercase tracking-wide text-brand-blue">Transforma</p>
-              <p className="mt-3 text-sm leading-relaxed text-brand-black/70">
+              <p className="mt-3 text-sm leading-relaxed text-brand-black/70 dark:text-brand-white/70">
                 Tecnologia sob medida para problemas que exigem uma solução própria.
               </p>
             </div>

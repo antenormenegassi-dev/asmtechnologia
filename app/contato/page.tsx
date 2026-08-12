@@ -29,12 +29,12 @@ export default function ContatoPage() {
 
           <dl className="mt-10 space-y-4 text-sm">
             <div>
-              <dt className="text-brand-black/50">E-mail</dt>
-              <dd className="mt-1 font-medium text-brand-black">{CONTACT_EMAIL}</dd>
+              <dt className="text-brand-black/50 dark:text-brand-white/50">E-mail</dt>
+              <dd className="mt-1 font-medium text-brand-black dark:text-brand-white">{CONTACT_EMAIL}</dd>
             </div>
             <div>
-              <dt className="text-brand-black/50">Telefone</dt>
-              <dd className="mt-1 font-medium text-brand-black">{CONTACT_PHONE_DISPLAY}</dd>
+              <dt className="text-brand-black/50 dark:text-brand-white/50">Telefone</dt>
+              <dd className="mt-1 font-medium text-brand-black dark:text-brand-white">{CONTACT_PHONE_DISPLAY}</dd>
             </div>
           </dl>
         </div>
@@ -45,42 +45,42 @@ export default function ContatoPage() {
           hook up a real submit handler / endpoint before launch if this
           form should actually send messages.
         */}
-        <form className="rounded-card border border-brand-black/10 p-8">
+        <form className="rounded-card border border-brand-black/10 dark:border-brand-white/10 p-8">
           <div className="grid gap-5">
-            <label className="text-sm font-medium text-brand-black">
+            <label className="text-sm font-medium text-brand-black dark:text-brand-white">
               Nome
               <input
                 type="text"
                 name="name"
                 placeholder="Seu nome completo"
-                className="mt-2 w-full rounded-control border border-brand-black/15 px-4 py-3 text-sm text-brand-black placeholder:text-brand-black/40 focus:border-brand-blue focus:outline-none"
+                className="mt-2 w-full rounded-control border border-brand-black/15 dark:border-brand-white/15 px-4 py-3 text-sm text-brand-black dark:text-brand-white placeholder:text-brand-black/40 dark:text-brand-white/40 focus:border-brand-blue focus:outline-none"
               />
             </label>
-            <label className="text-sm font-medium text-brand-black">
+            <label className="text-sm font-medium text-brand-black dark:text-brand-white">
               E-mail
               <input
                 type="email"
                 name="email"
                 placeholder="voce@empresa.com.br"
-                className="mt-2 w-full rounded-control border border-brand-black/15 px-4 py-3 text-sm text-brand-black placeholder:text-brand-black/40 focus:border-brand-blue focus:outline-none"
+                className="mt-2 w-full rounded-control border border-brand-black/15 dark:border-brand-white/15 px-4 py-3 text-sm text-brand-black dark:text-brand-white placeholder:text-brand-black/40 dark:text-brand-white/40 focus:border-brand-blue focus:outline-none"
               />
             </label>
-            <label className="text-sm font-medium text-brand-black">
+            <label className="text-sm font-medium text-brand-black dark:text-brand-white">
               Assunto
               <input
                 type="text"
                 name="subject"
                 placeholder="Ex: Certificado e-CNPJ A1"
-                className="mt-2 w-full rounded-control border border-brand-black/15 px-4 py-3 text-sm text-brand-black placeholder:text-brand-black/40 focus:border-brand-blue focus:outline-none"
+                className="mt-2 w-full rounded-control border border-brand-black/15 dark:border-brand-white/15 px-4 py-3 text-sm text-brand-black dark:text-brand-white placeholder:text-brand-black/40 dark:text-brand-white/40 focus:border-brand-blue focus:outline-none"
               />
             </label>
-            <label className="text-sm font-medium text-brand-black">
+            <label className="text-sm font-medium text-brand-black dark:text-brand-white">
               Mensagem
               <textarea
                 name="message"
                 rows={4}
                 placeholder="Como podemos ajudar?"
-                className="mt-2 w-full rounded-control border border-brand-black/15 px-4 py-3 text-sm text-brand-black placeholder:text-brand-black/40 focus:border-brand-blue focus:outline-none"
+                className="mt-2 w-full rounded-control border border-brand-black/15 dark:border-brand-white/15 px-4 py-3 text-sm text-brand-black dark:text-brand-white placeholder:text-brand-black/40 dark:text-brand-white/40 focus:border-brand-blue focus:outline-none"
               />
             </label>
             <button
@@ -89,7 +89,7 @@ export default function ContatoPage() {
             >
               Enviar mensagem
             </button>
-            <p className="text-xs text-brand-black/50">
+            <p className="text-xs text-brand-black/50 dark:text-brand-white/50">
               Prefere resposta imediata? Use o WhatsApp ao lado é o canal mais rápido com a
               nossa equipe.
             </p>

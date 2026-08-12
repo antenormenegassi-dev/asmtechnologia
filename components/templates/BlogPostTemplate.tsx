@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
+import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import type { BlogPost } from "@/data/blogPosts";
 
 export function BlogPostTemplate({ post }: { post: BlogPost }) {
   return (
     <article className="py-16">
       <Container className="max-w-3xl">
-        <p className="text-sm text-brand-black/50">
+        <p className="text-sm text-brand-black/50 dark:text-brand-white/50">
           <Link href="/blog" className="hover:text-brand-blue">
             Conteúdos
           </Link>{" "}
@@ -17,10 +18,10 @@ export function BlogPostTemplate({ post }: { post: BlogPost }) {
           </Link>
         </p>
 
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-brand-black">
+        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-brand-black dark:text-brand-white">
           {post.title}
         </h1>
-        <p className="mt-4 text-sm text-brand-black/50">
+        <p className="mt-4 text-sm text-brand-black/50 dark:text-brand-white/50">
           {new Date(post.publishedAt).toLocaleDateString("pt-BR", {
             day: "2-digit",
             month: "long",
@@ -29,15 +30,17 @@ export function BlogPostTemplate({ post }: { post: BlogPost }) {
           &middot; {post.readingTime}
         </p>
 
+        <ImagePlaceholder className="mt-8" />
+
         <div className="mt-10 space-y-8">
           {post.content.map((section, index) => (
             <div key={section.heading ?? index}>
               {section.heading && (
-                <h2 className="text-xl font-semibold text-brand-black">{section.heading}</h2>
+                <h2 className="text-xl font-semibold text-brand-black dark:text-brand-white">{section.heading}</h2>
               )}
               <div className="mt-3 space-y-4">
                 {section.paragraphs.map((paragraph, pIndex) => (
-                  <p key={pIndex} className="text-base leading-relaxed text-brand-black/70">
+                  <p key={pIndex} className="text-base leading-relaxed text-brand-black/70 dark:text-brand-white/70">
                     {paragraph}
                   </p>
                 ))}
@@ -46,11 +49,11 @@ export function BlogPostTemplate({ post }: { post: BlogPost }) {
           ))}
         </div>
 
-        <div className="mt-14 rounded-card border border-brand-black/10 p-8 text-center">
-          <p className="text-lg font-semibold text-brand-black">
+        <div className="mt-14 rounded-card border border-brand-black/10 dark:border-brand-white/10 p-8 text-center">
+          <p className="text-lg font-semibold text-brand-black dark:text-brand-white">
             Quer ajuda especializada com esse assunto?
           </p>
-          <p className="mt-2 text-sm text-brand-black/70">
+          <p className="mt-2 text-sm text-brand-black/70 dark:text-brand-white/70">
             Fale com a equipe da ASM Technologia e receba orientação personalizada.
           </p>
           <div className="mt-6 flex justify-center">

@@ -78,6 +78,72 @@ export function BoltIcon({ className }: IconProps) {
   );
 }
 
+export function DocumentIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path d="M7 3.5H14L18 7.5V20.5H7V3.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M14 3.5V7.5H18" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M9.5 12H15.5M9.5 15.5H15.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function ChatIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path
+        d="M4 12C4 7.58 7.8 4 12.5 4C17.2 4 21 7.58 21 12C21 16.42 17.2 20 12.5 20C11.13 20 9.83 19.68 8.68 19.1L4 20.5L5.35 16.68C4.5 15.35 4 13.73 4 12Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function ImageIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="1.5" />
+      <circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" strokeWidth="1.5" />
+      <path
+        d="M3 16L8.5 11.5L12.5 15L16 12L21 16.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+export function SunIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5" />
+      <path
+        d="M12 2V4M12 20V22M4 12H2M22 12H20M4.9 4.9L6.3 6.3M17.7 17.7L19.1 19.1M19.1 4.9L17.7 6.3M6.3 17.7L4.9 19.1"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+export function MoonIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path
+        d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export function WhatsAppIcon({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">

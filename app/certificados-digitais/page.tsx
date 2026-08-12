@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { ImagePlaceholder } from "@/components/ui/ImagePlaceholder";
 import { CertificateCard } from "@/components/blocks/CertificateCard";
+import { CertificateWhatIsSection } from "@/components/blocks/CertificateWhatIsSection";
+import { CertificateHistorySection } from "@/components/blocks/CertificateHistorySection";
+import { A1A3ComparisonSection } from "@/components/blocks/A1A3ComparisonSection";
 import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
 import { certificates } from "@/data/certificates";
 
@@ -22,26 +26,36 @@ const GROUPS = [
 export default function CertificadosDigitaisPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 py-20">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
         <Container>
-          <SectionHeading
-            eyebrow="Protege"
-            title="Certificados Digitais para empresas e profissionais"
-            description="Segurança, clareza e atendimento especializado para você encontrar, entender, escolher e comprar o certificado certo."
-          />
-          <div className="mt-10 flex flex-wrap gap-4">
-            <WhatsAppCTA message="Olá! Gostaria de orientação para escolher meu certificado digital.">
-              Falar com um especialista
-            </WhatsAppCTA>
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+            <div>
+              <SectionHeading
+                eyebrow="Protege"
+                title="Certificados Digitais para empresas e profissionais"
+                description="Segurança, clareza e atendimento especializado para você encontrar, entender, escolher e comprar o certificado certo."
+              />
+              <div className="mt-10 flex flex-wrap gap-4">
+                <WhatsAppCTA message="Olá! Gostaria de orientação para escolher meu certificado digital.">
+                  Falar com um especialista
+                </WhatsAppCTA>
+              </div>
+            </div>
+
+            <ImagePlaceholder />
           </div>
         </Container>
       </section>
+
+      <CertificateWhatIsSection />
+      <CertificateHistorySection />
+      <A1A3ComparisonSection />
 
       {GROUPS.map((group) => {
         const items = certificates.filter((cert) => cert.category === group.category);
         if (items.length === 0) return null;
         return (
-          <section key={group.category} className="border-b border-brand-black/10 py-16">
+          <section key={group.category} className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
             <Container>
               <SectionHeading title={group.title} description={group.description} />
               <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

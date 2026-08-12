@@ -2,11 +2,12 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Logo } from "@/components/brand/Logo";
 import { MobileNav } from "@/components/layout/MobileNav";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { NAV_ITEMS } from "@/lib/constants";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-brand-black/10 bg-brand-white/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-brand-black/10 bg-brand-white/95 backdrop-blur dark:border-brand-white/10 dark:bg-brand-black/95">
       <Container className="flex h-20 items-center justify-between">
         <Link href="/" aria-label="ASM Technologia página inicial">
           <Logo />
@@ -17,7 +18,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-brand-black/80 transition-colors hover:text-brand-blue"
+              className="text-sm font-medium text-brand-black/80 transition-colors hover:text-brand-blue dark:text-brand-white/80"
             >
               {item.label}
             </Link>
@@ -31,6 +32,7 @@ export function Header() {
           >
             Comprar Certificado
           </Link>
+          <ThemeToggle />
           <MobileNav />
         </div>
       </Container>

@@ -5,6 +5,7 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import { NAV_ITEMS } from "@/lib/constants";
 import { MenuIcon, CloseIcon } from "@/components/ui/icons";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -29,7 +30,7 @@ export function MobileNav() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Abrir menu"
-        className="flex h-10 w-10 items-center justify-center rounded-control text-brand-black"
+        className="flex h-10 w-10 items-center justify-center rounded-control text-brand-black dark:text-brand-white"
       >
         <MenuIcon className="h-6 w-6" />
       </button>
@@ -40,14 +41,17 @@ export function MobileNav() {
           <div className="fixed inset-0 z-50 flex flex-col overflow-y-auto bg-brand-black">
             <div className="flex items-center justify-between px-6 py-5">
               <span className="text-lg font-semibold text-brand-white">Menu</span>
-              <button
-                type="button"
-                onClick={() => setOpen(false)}
-                aria-label="Fechar menu"
-                className="flex h-10 w-10 items-center justify-center rounded-control text-brand-white"
-              >
-                <CloseIcon className="h-6 w-6" />
-              </button>
+              <div className="flex items-center gap-3">
+                <ThemeToggle variant="onDark" />
+                <button
+                  type="button"
+                  onClick={() => setOpen(false)}
+                  aria-label="Fechar menu"
+                  className="flex h-10 w-10 items-center justify-center rounded-control text-brand-white"
+                >
+                  <CloseIcon className="h-6 w-6" />
+                </button>
+              </div>
             </div>
             <nav className="flex flex-col gap-1 px-6 py-4">
               {NAV_ITEMS.map((item) => (

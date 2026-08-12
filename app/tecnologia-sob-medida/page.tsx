@@ -31,7 +31,7 @@ const STEPS = [
 export default function TecnologiaSobMedidaPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 py-20">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
         <Container>
           <SectionHeading
             eyebrow="Transforma"
@@ -46,7 +46,7 @@ export default function TecnologiaSobMedidaPage() {
         </Container>
       </section>
 
-      <section className="border-b border-brand-black/10 py-16">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>
           <SectionHeading eyebrow="O que desenvolvemos" title="Tecnologia projetada para o seu problema" />
           <div className="mt-10">
@@ -55,16 +55,16 @@ export default function TecnologiaSobMedidaPage() {
         </Container>
       </section>
 
-      <section className="border-b border-brand-black/10 py-16">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>
           <SectionHeading eyebrow="Como trabalhamos" title="Do problema à solução" />
           <ol className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {STEPS.map((step, index) => (
-              <li key={step} className="rounded-card border border-brand-black/10 p-6">
+              <li key={step} className="rounded-card border border-brand-black/10 dark:border-brand-white/10 p-6">
                 <span className="flex h-8 w-8 items-center justify-center rounded-control bg-brand-blue text-sm font-semibold text-brand-white">
                   {index + 1}
                 </span>
-                <p className="mt-4 text-sm leading-relaxed text-brand-black/70">{step}</p>
+                <p className="mt-4 text-sm leading-relaxed text-brand-black/70 dark:text-brand-white/70">{step}</p>
               </li>
             ))}
           </ol>

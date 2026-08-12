@@ -6,7 +6,7 @@ type WhatsAppCTAVariant = "primary" | "secondary";
 const VARIANT_CLASSES: Record<WhatsAppCTAVariant, string> = {
   primary: "bg-brand-blue text-brand-white hover:bg-brand-blue-dark",
   secondary:
-    "border border-brand-black/15 text-brand-black hover:border-brand-blue hover:text-brand-blue",
+    "border border-brand-black/15 text-brand-black hover:border-brand-blue hover:text-brand-blue dark:border-brand-white/15 dark:text-brand-white",
 };
 
 interface WhatsAppCTAProps {

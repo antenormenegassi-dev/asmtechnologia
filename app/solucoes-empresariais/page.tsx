@@ -23,7 +23,7 @@ const AREAS = [
 export default function SolucoesEmpresariaisPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 py-20">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
         <Container>
           <SectionHeading
             eyebrow="Organiza"
@@ -41,7 +41,7 @@ export default function SolucoesEmpresariaisPage() {
         </Container>
       </section>
 
-      <section className="border-b border-brand-black/10 py-16">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>
           <SectionHeading eyebrow="Áreas de gestão" title="O que você organiza com a ASM" />
           <div className="mt-10">

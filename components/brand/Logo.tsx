@@ -17,7 +17,7 @@ export function LogoMark({
   style?: React.CSSProperties;
   tone?: "default" | "inverted";
 }) {
-  const secondaryStroke = tone === "inverted" ? "var(--color-brand-white)" : "var(--color-brand-black)";
+  const secondaryStroke = tone === "inverted" ? "var(--color-brand-white)" : "var(--foreground)";
 
   return (
     <svg
@@ -52,9 +52,11 @@ interface LogoProps {
 
 export function Logo({ variant = "full", tone = "default", size = 32, className }: LogoProps) {
   const wordmarkClass =
-    tone === "inverted" ? "text-brand-white" : "text-brand-black";
+    tone === "inverted" ? "text-brand-white" : "text-brand-black dark:text-brand-white";
   const wordmarkSubClass =
-    tone === "inverted" ? "font-normal text-brand-white/70" : "font-normal text-brand-black/70";
+    tone === "inverted"
+      ? "font-normal text-brand-white/70"
+      : "font-normal text-brand-black/70 dark:text-brand-white/70";
 
   return (
     <span

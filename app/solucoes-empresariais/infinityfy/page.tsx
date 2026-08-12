@@ -28,13 +28,13 @@ const MODULES = [
 export default function InfinityFyPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 py-20">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
         <Container>
           <Badge>Parceria ASM Technologia</Badge>
-          <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-brand-black">
+          <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-brand-black dark:text-brand-white">
             InfinityFy: gestão completa para sua empresa
           </h1>
-          <p className="mt-4 max-w-xl text-lg leading-relaxed text-brand-black/70">
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-brand-black/70 dark:text-brand-white/70">
             Vendas, PDV, estoque, financeiro, compras, relatórios e muito mais em uma única
             plataforma, oferecida por meio da parceria comercial entre a ASM Technologia e o
             InfinityFy.
@@ -47,7 +47,7 @@ export default function InfinityFyPage() {
         </Container>
       </section>
 
-      <section className="border-b border-brand-black/10 py-16">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>
           <SectionHeading eyebrow="Módulos" title="Tudo o que sua operação precisa, integrado" />
           <div className="mt-10">
@@ -63,7 +63,7 @@ export default function InfinityFyPage() {
           </h2>
           <WhatsAppCTA
             message="Olá! Gostaria de agendar uma demonstração do InfinityFy."
-            className="bg-brand-white text-brand-blue hover:bg-brand-white/90"
+            className="bg-brand-white dark:bg-brand-black text-brand-blue hover:bg-brand-white/90 dark:bg-brand-black/90"
           >
             Agendar demonstração
           </WhatsAppCTA>

@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /*
  * ASM Technologia brand tokens.
- * Fixed 60/30/10 palette (white / blue / near-black). This is a brand site,
- * not a themeable app, so there is deliberately no prefers-color-scheme
- * dark-mode override here the palette stays fixed regardless of OS theme.
+ * Fixed 60/30/10 palette (white / blue / near-black). The palette itself
+ * stays fixed regardless of OS theme (no prefers-color-scheme override) —
+ * dark mode is opt-in only, via the navbar toggle, which swaps background
+ * and foreground by adding a `dark` class to <html>.
  */
 :root {
   --color-brand-white: #ffffff;
@@ -17,6 +20,11 @@
 
   --radius-card: 12px;
   --radius-control: 8px;
+}
+
+.dark {
+  --background: var(--color-brand-black);
+  --foreground: var(--color-brand-white);
 }
 
 @theme inline {
@@ -39,4 +47,23 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@utility animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
 }

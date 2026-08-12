@@ -27,7 +27,7 @@ const STEPS = [
 export default function ParceirosPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 py-20">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
         <Container>
           <SectionHeading
             eyebrow="Programa de Parceiros"
@@ -42,7 +42,7 @@ export default function ParceirosPage() {
         </Container>
       </section>
 
-      <section className="border-b border-brand-black/10 py-16">
+      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>
           <SectionHeading eyebrow="Vantagens" title="O que você ganha como parceiro" />
           <div className="mt-10">
@@ -56,11 +56,11 @@ export default function ParceirosPage() {
           <SectionHeading eyebrow="Como funciona" title="Cadastro em quatro passos" />
           <ol className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {STEPS.map((step, index) => (
-              <li key={step} className="rounded-card border border-brand-black/10 p-6">
+              <li key={step} className="rounded-card border border-brand-black/10 dark:border-brand-white/10 p-6">
                 <span className="flex h-8 w-8 items-center justify-center rounded-control bg-brand-blue text-sm font-semibold text-brand-white">
                   {index + 1}
                 </span>
-                <p className="mt-4 text-sm leading-relaxed text-brand-black/70">{step}</p>
+                <p className="mt-4 text-sm leading-relaxed text-brand-black/70 dark:text-brand-white/70">{step}</p>
               </li>
             ))}
           </ol>
