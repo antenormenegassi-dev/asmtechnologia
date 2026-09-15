@@ -7,7 +7,12 @@ import { NAV_ITEMS } from "@/lib/constants";
 import { MenuIcon, CloseIcon } from "@/components/ui/icons";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
-export function MobileNav() {
+interface MobileNavProps {
+  /** "onDark" keeps the closed-state trigger icon white, for use over a dark/transparent header. */
+  variant?: "default" | "onDark";
+}
+
+export function MobileNav({ variant = "default" }: MobileNavProps) {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -30,7 +35,9 @@ export function MobileNav() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label="Abrir menu"
-        className="flex h-10 w-10 items-center justify-center rounded-control text-brand-black dark:text-brand-white"
+        className={`flex h-10 w-10 items-center justify-center rounded-control ${
+          variant === "onDark" ? "text-brand-white" : "text-brand-black dark:text-brand-white"
+        }`}
       >
         <MenuIcon className="h-6 w-6" />
       </button>

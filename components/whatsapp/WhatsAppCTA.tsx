@@ -1,12 +1,13 @@
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { WhatsAppIcon } from "@/components/ui/icons";
 
-type WhatsAppCTAVariant = "primary" | "secondary";
+type WhatsAppCTAVariant = "primary" | "secondary" | "white";
 
 const VARIANT_CLASSES: Record<WhatsAppCTAVariant, string> = {
   primary: "bg-brand-blue text-brand-white hover:bg-brand-blue-dark",
   secondary:
     "border border-brand-black/15 text-brand-black hover:border-brand-blue hover:text-brand-blue dark:border-brand-white/15 dark:text-brand-white",
+  white: "bg-brand-white text-brand-blue hover:bg-brand-white/90",
 };
 
 interface WhatsAppCTAProps {

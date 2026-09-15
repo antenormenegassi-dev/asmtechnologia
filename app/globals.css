@@ -11,9 +11,9 @@
  */
 :root {
   --color-brand-white: #ffffff;
-  --color-brand-blue: #155eef;
-  --color-brand-blue-dark: #1147b8;
-  --color-brand-black: #111111;
+  --color-brand-blue: #1557c0;
+  --color-brand-blue-dark: #11469a;
+  --color-brand-black: #1f2328;
 
   --background: var(--color-brand-white);
   --foreground: var(--color-brand-black);

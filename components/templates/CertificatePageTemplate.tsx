@@ -125,17 +125,26 @@ export function CertificatePageTemplate({
         </section>
       )}
 
-      <section className="bg-brand-blue py-16">
+      <section className="bg-brand-blue py-20">
         <Container className="flex flex-col items-center gap-6 text-center">
           <h2 className="max-w-xl text-2xl font-semibold tracking-tight text-brand-white sm:text-3xl">
             Pronto para adquirir seu {certificate.name}?
           </h2>
-          <WhatsAppCTA
-            message={certificate.whatsappMessage}
-            className="bg-brand-white dark:bg-brand-black text-brand-blue hover:bg-brand-white/90 dark:bg-brand-black/90"
-          >
-            Comprar {certificate.name} pelo WhatsApp
-          </WhatsAppCTA>
+          <p className="max-w-lg text-base leading-relaxed text-brand-white/85">
+            Fale agora com um especialista da ASM e emita seu certificado com atendimento
+            rápido e suporte durante todo o processo.
+          </p>
+          <div className="mt-2 flex flex-wrap justify-center gap-4">
+            <WhatsAppCTA message={certificate.whatsappMessage} variant="white">
+              Comprar {certificate.name} pelo WhatsApp
+            </WhatsAppCTA>
+            <Link
+              href="/contato"
+              className="inline-flex items-center justify-center rounded-control border border-brand-white/40 px-5 py-3 text-sm font-medium text-brand-white transition-colors hover:border-brand-white"
+            >
+              Falar com atendimento
+            </Link>
+          </div>
         </Container>
       </section>
     </>
