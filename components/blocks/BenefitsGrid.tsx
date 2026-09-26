@@ -9,7 +9,7 @@ export function BenefitsGrid() {
     <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-24">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-          <ImagePlaceholder aspectClassName="aspect-4/3" />
+          <ImagePlaceholder src="/images/secoes/beneficios.jpg" aspectClassName="aspect-4/3" />
 
           <div>
             <SectionHeading

@@ -9,7 +9,9 @@ export const SITE_URL = "https://www.asmtechnologia.com.br";
 
 // TODO: replace with the real ASM Technologia contact channels before launch.
 export const CONTACT_EMAIL = "contato@asmtechnologia.com.br";
-export const CONTACT_PHONE_DISPLAY = "(00) 0000-0000";
+export const CONTACT_PHONE_DISPLAY = "(11) 91042-1414";
+export const INSTAGRAM_URL = "https://www.instagram.com/asmtechnologia";
+export const INSTAGRAM_HANDLE = "@asmtechnologia";
 
 export interface NavItem {
   label: string;

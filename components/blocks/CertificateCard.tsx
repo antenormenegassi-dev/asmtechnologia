@@ -9,7 +9,11 @@ export function CertificateCard({ certificate }: { certificate: Certificate }) {
       href={`/certificados-digitais/${certificate.slug}`}
       className="group flex flex-col overflow-hidden rounded-card border border-brand-black/10 dark:border-brand-white/10 bg-brand-white dark:bg-brand-black transition-colors hover:border-brand-blue"
     >
-      <ImagePlaceholder className="rounded-none border-0 border-b border-dashed border-brand-black/15 dark:border-brand-white/15" />
+      <ImagePlaceholder
+        src={certificate.cover}
+        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        className="rounded-none border-0 border-b border-brand-black/10 dark:border-brand-white/10"
+      />
       <div className="flex flex-1 flex-col justify-between p-6">
         <div>
           <h3 className="text-lg font-semibold text-brand-black dark:text-brand-white">{certificate.name}</h3>

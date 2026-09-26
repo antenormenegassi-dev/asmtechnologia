@@ -2,7 +2,15 @@ import Link from "next/link";
 import { Container } from "@/components/layout/Container";
 import { Logo } from "@/components/brand/Logo";
 import { NoASM } from "@/components/brand/NoASM";
-import { FOOTER_LINKS, SITE_TAGLINE, CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/constants";
+import { InstagramIcon } from "@/components/ui/icons";
+import {
+  FOOTER_LINKS,
+  SITE_TAGLINE,
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  INSTAGRAM_URL,
+  INSTAGRAM_HANDLE,
+} from "@/lib/constants";
 
 function FooterColumn({
   title,
@@ -48,6 +56,16 @@ export function Footer() {
               <p>{CONTACT_EMAIL}</p>
               <p>{CONTACT_PHONE_DISPLAY}</p>
             </div>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Instagram da ASM Technologia (${INSTAGRAM_HANDLE})`}
+              className="mt-6 inline-flex items-center gap-2 text-sm text-brand-white/60 transition-colors hover:text-brand-white"
+            >
+              <InstagramIcon className="h-5 w-5" />
+              {INSTAGRAM_HANDLE}
+            </a>
           </div>
 
           <FooterColumn title="Certificados" links={FOOTER_LINKS.certificados} />

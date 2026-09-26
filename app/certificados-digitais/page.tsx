@@ -42,7 +42,7 @@ export default function CertificadosDigitaisPage() {
               </div>
             </div>
 
-            <ImagePlaceholder />
+            <ImagePlaceholder src="/images/secoes/certificados.jpg" />
           </div>
         </Container>
       </section>

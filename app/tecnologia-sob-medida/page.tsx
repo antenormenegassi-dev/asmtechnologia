@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
+import { Hero } from "@/components/blocks/Hero";
+import { BoltIcon, CheckIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FeatureList } from "@/components/blocks/FeatureList";
 import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
@@ -31,20 +33,20 @@ const STEPS = [
 export default function TecnologiaSobMedidaPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
-        <Container>
-          <SectionHeading
-            eyebrow="Transforma"
-            title="Sua necessidade não cabe em um sistema pronto? Nós criamos a solução."
-            description="Quando um produto pronto não resolve, a ASM projeta e desenvolve a tecnologia certa para o seu problema específico."
-          />
-          <div className="mt-10 flex flex-wrap gap-4">
-            <WhatsAppCTA message="Olá! Tenho um projeto de tecnologia sob medida para discutir com a ASM.">
-              Solicitar projeto
-            </WhatsAppCTA>
-          </div>
-        </Container>
-      </section>
+      <Hero
+        title="Sua necessidade não cabe em um sistema pronto? Nós criamos a solução."
+        description="Quando um produto pronto não resolve, a ASM projeta e desenvolve a tecnologia certa para o seu problema específico."
+        image={{ src: "/images/hero/tecnologia.jpg", alt: "Desenvolvedor e cliente discutindo um projeto em frente à tela" }}
+        cta={
+          <WhatsAppCTA message="Olá! Tenho um projeto de tecnologia sob medida para discutir com a ASM.">
+            Solicitar projeto
+          </WhatsAppCTA>
+        }
+        highlights={[
+          { icon: BoltIcon, label: "Projeto", value: "Em desenvolvimento" },
+          { icon: CheckIcon, label: "Entrega", value: "Por etapas" },
+        ]}
+      />
 
       <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>

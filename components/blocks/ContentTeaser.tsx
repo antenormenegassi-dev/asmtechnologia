@@ -33,7 +33,11 @@ export function ContentTeaser() {
               href={`/blog/${post.category}/${post.slug}`}
               className="group flex flex-col overflow-hidden rounded-card border border-brand-black/10 dark:border-brand-white/10 transition-colors hover:border-brand-blue"
             >
-              <ImagePlaceholder className="rounded-none border-0 border-b border-dashed border-brand-black/15 dark:border-brand-white/15" />
+              <ImagePlaceholder
+                src={post.cover}
+                sizes="(min-width: 640px) 33vw, 100vw"
+                className="rounded-none border-0 border-b border-brand-black/10 dark:border-brand-white/10"
+              />
               <div className="p-6">
                 <span className="text-xs font-semibold uppercase tracking-wide text-brand-blue">
                   {post.categoryLabel}

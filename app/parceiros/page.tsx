@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
+import { Hero } from "@/components/blocks/Hero";
+import { CheckIcon, DocumentIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FeatureList } from "@/components/blocks/FeatureList";
 import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
@@ -27,20 +29,20 @@ const STEPS = [
 export default function ParceirosPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
-        <Container>
-          <SectionHeading
-            eyebrow="Programa de Parceiros"
-            title="Transforme sua rede de relacionamento em receita"
-            description="Contadores, escritórios de contabilidade e parceiros comerciais indicam certificados digitais e soluções ASM e recebem comissão por isso."
-          />
-          <div className="mt-10 flex flex-wrap gap-4">
-            <WhatsAppCTA message="Olá! Gostaria de me cadastrar no programa de parceiros da ASM.">
-              Quero ser parceiro
-            </WhatsAppCTA>
-          </div>
-        </Container>
-      </section>
+      <Hero
+        title="Transforme sua rede de relacionamento em receita"
+        description="Contadores, escritórios de contabilidade e parceiros comerciais indicam certificados digitais e soluções ASM e recebem comissão por isso."
+        image={{ src: "/images/hero/parceiros.jpg", alt: "Contadora atendendo um cliente no escritório" }}
+        cta={
+          <WhatsAppCTA message="Olá! Gostaria de me cadastrar no programa de parceiros da ASM.">
+            Quero ser parceiro
+          </WhatsAppCTA>
+        }
+        highlights={[
+          { icon: CheckIcon, label: "Indicação", value: "Aprovada" },
+          { icon: DocumentIcon, label: "Comissão", value: "Paga" },
+        ]}
+      />
 
       <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>

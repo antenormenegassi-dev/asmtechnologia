@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/constants";
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contato",
@@ -35,6 +35,19 @@ export default function ContatoPage() {
             <div>
               <dt className="text-brand-black/50 dark:text-brand-white/50">Telefone</dt>
               <dd className="mt-1 font-medium text-brand-black dark:text-brand-white">{CONTACT_PHONE_DISPLAY}</dd>
+            </div>
+            <div>
+              <dt className="text-brand-black/50 dark:text-brand-white/50">Instagram</dt>
+              <dd className="mt-1 font-medium">
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-brand-black transition-colors hover:text-brand-blue dark:text-brand-white"
+                >
+                  {INSTAGRAM_HANDLE}
+                </a>
+              </dd>
             </div>
           </dl>
         </div>

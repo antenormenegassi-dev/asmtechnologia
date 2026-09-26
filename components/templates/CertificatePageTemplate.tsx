@@ -65,7 +65,7 @@ export function CertificatePageTemplate({
               </dl>
             </div>
 
-            <ImagePlaceholder />
+            <ImagePlaceholder src={certificate.cover} />
           </div>
         </Container>
       </section>

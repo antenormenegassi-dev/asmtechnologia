@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
 import { NAV_ITEMS } from "@/lib/constants";
+import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { MenuIcon, CloseIcon } from "@/components/ui/icons";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
@@ -71,13 +72,15 @@ export function MobileNav({ variant = "default" }: MobileNavProps) {
                   {item.label}
                 </Link>
               ))}
-              <Link
-                href="/certificados-digitais"
+              <a
+                href={buildWhatsAppLink("Olá! Gostaria de comprar um certificado digital.")}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="mt-6 inline-flex items-center justify-center rounded-control bg-brand-blue px-5 py-3 text-sm font-medium text-brand-white"
               >
                 Comprar Certificado
-              </Link>
+              </a>
             </nav>
           </div>,
           document.body,

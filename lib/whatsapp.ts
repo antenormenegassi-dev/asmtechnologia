@@ -1,6 +1,6 @@
-// TODO: replace with the real ASM Technologia WhatsApp number in E.164 format
-// (digits only, country + area code, no "+" or symbols) before launch.
-export const WHATSAPP_NUMBER = "5500000000000";
+// ASM Technologia WhatsApp number in E.164 format
+// (digits only, country + area code, no "+" or symbols): (11) 91042-1414.
+export const WHATSAPP_NUMBER = "5511910421414";
 
 /**
  * Builds a wa.me link that opens WhatsApp with a pre-filled message.

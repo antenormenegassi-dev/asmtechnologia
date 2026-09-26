@@ -12,6 +12,8 @@ export interface AcquisitionStep {
 
 export interface Certificate {
   slug: string;
+  /** Cover photo under /public; falls back to the generic placeholder. */
+  cover?: string;
   category: CertificateCategory;
   name: string;
   shortDescription: string;
@@ -30,6 +32,7 @@ export interface Certificate {
 export const certificates: Certificate[] = [
   {
     slug: "e-cnpj",
+    cover: "/images/certificados/e-cnpj.jpg",
     category: "e-cnpj",
     name: "e-CNPJ",
     shortDescription:
@@ -94,6 +97,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "e-cnpj-a1",
+    cover: "/images/certificados/e-cnpj-a1.jpg",
     category: "e-cnpj",
     name: "e-CNPJ A1",
     shortDescription:
@@ -150,6 +154,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "e-cnpj-a3",
+    cover: "/images/certificados/e-cnpj-a3.jpg",
     category: "e-cnpj",
     name: "e-CNPJ A3",
     shortDescription:
@@ -206,6 +211,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "e-cpf",
+    cover: "/images/certificados/e-cpf.jpg",
     category: "e-cpf",
     name: "e-CPF",
     shortDescription:
@@ -264,6 +270,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "e-cpf-a1",
+    cover: "/images/certificados/e-cpf-a1.jpg",
     category: "e-cpf",
     name: "e-CPF A1",
     shortDescription:
@@ -314,6 +321,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "e-cpf-a3",
+    cover: "/images/certificados/e-cpf-a3.jpg",
     category: "e-cpf",
     name: "e-CPF A3",
     shortDescription:
@@ -364,6 +372,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "nf-e",
+    cover: "/images/certificados/nf-e.jpg",
     category: "nf-e",
     name: "Certificado para NF-e",
     shortDescription:
@@ -422,6 +431,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "nf-c",
+    cover: "/images/certificados/nf-c.jpg",
     category: "nf-c",
     name: "Certificado para NFC-e",
     shortDescription:
@@ -480,6 +490,7 @@ export const certificates: Certificate[] = [
   },
   {
     slug: "outros",
+    cover: "/images/certificados/outros.jpg",
     category: "outros",
     name: "Outros Certificados",
     shortDescription:

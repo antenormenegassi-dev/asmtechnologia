@@ -27,7 +27,7 @@ export function PartnerTeaser() {
           </Link>
         </div>
 
-        <ImagePlaceholder borderClassName="border-brand-white/15" />
+        <ImagePlaceholder src="/images/secoes/parceiros.jpg" borderClassName="border-brand-white/15" />
       </Container>
     </section>
   );

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { Hero } from "@/components/blocks/Hero";
+import { Button } from "@/components/ui/Button";
+import { CheckIcon, LayersIcon } from "@/components/ui/icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FeatureList } from "@/components/blocks/FeatureList";
 import { CTASection } from "@/components/blocks/CTASection";
@@ -23,23 +25,16 @@ const AREAS = [
 export default function SolucoesEmpresariaisPage() {
   return (
     <>
-      <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-20">
-        <Container>
-          <SectionHeading
-            eyebrow="Organiza"
-            title="Soluções Empresariais para gerenciar o seu negócio"
-            description="A ASM é parceira comercial do InfinityFy, sistema de gestão que organiza vendas, estoque, financeiro e operação."
-          />
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/solucoes-empresariais/infinityfy"
-              className="inline-flex items-center justify-center rounded-control bg-brand-blue px-6 py-3.5 text-sm font-medium text-brand-white transition-colors hover:bg-brand-blue-dark"
-            >
-              Conhecer o InfinityFy
-            </Link>
-          </div>
-        </Container>
-      </section>
+      <Hero
+        title="Soluções Empresariais para gerenciar o seu negócio"
+        description="A ASM é parceira comercial do InfinityFy, sistema de gestão que organiza vendas, estoque, financeiro e operação."
+        image={{ src: "/images/hero/solucoes.jpg", alt: "Lojista usando o sistema de gestão no balcão da loja" }}
+        cta={<Button href="/solucoes-empresariais/infinityfy" className="px-6 py-3.5">Conhecer o InfinityFy</Button>}
+        highlights={[
+          { icon: LayersIcon, label: "Estoque", value: "Sincronizado" },
+          { icon: CheckIcon, label: "Venda", value: "Caixa atualizado" },
+        ]}
+      />
 
       <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container>

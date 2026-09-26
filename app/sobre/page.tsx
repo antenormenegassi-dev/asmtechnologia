@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/layout/Container";
+import { Hero } from "@/components/blocks/Hero";
+import { WhatsAppCTA } from "@/components/whatsapp/WhatsAppCTA";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { NoASM } from "@/components/brand/NoASM";
 
 export const metadata: Metadata = {
   title: "Sobre a ASM Technologia",
@@ -12,16 +13,16 @@ export const metadata: Metadata = {
 export default function SobrePage() {
   return (
     <>
-      <section className="relative overflow-hidden border-b border-brand-black/10 dark:border-brand-white/10 py-20">
-        <NoASM className="pointer-events-none absolute -right-24 top-0 h-96 w-96 text-brand-blue/5" />
-        <Container className="relative max-w-2xl">
-          <SectionHeading
-            eyebrow="Sobre a ASM"
-            title="Tecnologia que protege, organiza e impulsiona empresas"
-            description="A ASM Technologia nasceu para ser mais do que uma vendedora de certificados digitais: somos uma empresa de tecnologia capaz de acompanhar o cliente em diferentes níveis de maturidade digital."
-          />
-        </Container>
-      </section>
+      <Hero
+        title="Tecnologia que protege, organiza e impulsiona empresas"
+        description="A ASM Technologia nasceu para ser mais do que uma vendedora de certificados digitais: somos uma empresa de tecnologia capaz de acompanhar o cliente em diferentes níveis de maturidade digital."
+        image={{ src: "/images/hero/sobre.jpg", alt: "Equipe reunida trabalhando em conjunto" }}
+        cta={
+          <WhatsAppCTA message="Olá! Vim pela página Sobre e gostaria de falar com a ASM.">
+            Falar com a ASM
+          </WhatsAppCTA>
+        }
+      />
 
       <section className="border-b border-brand-black/10 dark:border-brand-white/10 py-16">
         <Container className="max-w-3xl space-y-6 text-base leading-relaxed text-brand-black/70 dark:text-brand-white/70">

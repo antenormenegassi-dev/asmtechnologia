@@ -19,7 +19,7 @@ export function BlogListing({ category, title, description }: BlogListingProps) 
         <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-center">
           <SectionHeading eyebrow="Conteúdos" title={title} description={description} />
 
-          <ImagePlaceholder />
+          <ImagePlaceholder src={`/images/secoes/blog-${category}.jpg`} />
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
